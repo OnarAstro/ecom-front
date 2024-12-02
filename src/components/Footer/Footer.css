@@ -1,0 +1,244 @@
+.footer {
+  width: 100%;
+  background-color: #e8ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.footer .container-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer .container-footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: start;
+}
+
+.footer .container-footer .footer-logo h1 {
+  color: #ff813f;
+  font-weight: 600;
+  font-size: 2.5rem;
+
+  text-align: center;
+}
+
+.footer .container-footer .footer-logo .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: start;
+}
+
+.footer .container-footer .footer-logo .footer-text p {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 0%, 0.7);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer .container-footer .footer-logo .footer-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  text-align: start;
+}
+
+.footer .container-footer .footer-logo .footer-icon .icon {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.footer .container-footer .footer-logo .footer-icon .icon:hover {
+  color: #ff813f;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*  */
+
+
+.footer .container-footer .footer-page {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: start;
+}
+
+.footer .container-footer .footer-page h3 {
+
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.footer .container-footer .footer-page ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .container-footer .footer-page ul li {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;  
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer .container-footer .footer-page ul li:hover {
+  color: #ff813f;
+  transition: all 0.5s ease-in-out;
+}
+
+/*  */
+
+.footer .container-footer .footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: start;
+}
+
+.footer .container-footer .footer-contact h3 {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.footer .container-footer .footer-contact p {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: start;
+  width: 80%;
+}
+
+.footer .container-footer .footer-contact .footer-input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  width: 60%;
+  height: 4rem;
+  position: relative;
+}
+
+.footer .container-footer .footer-contact .footer-input input {  
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%, 0.8);
+  text-align: start;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  border: 2px gray solid;
+  outline-color: #ff813f;
+}
+
+.footer .container-footer .footer-contact .footer-input button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%, 0.8);
+  text-align: center;
+  background-color: #ff813f;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container-footer .footer-contact .footer-input button .arrow {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+
+/*  */
+
+
+.footer .footer-hr {
+  width: 100%;
+  border: 2px solid rgb(68, 68, 68);
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*  */
+
+.footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* padding: 0.5rem; */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-bottom p {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .footer .container-footer .footer-contact .footer-input {
+    width: 80%;
+}
+}

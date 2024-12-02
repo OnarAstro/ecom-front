@@ -1,0 +1,195 @@
+.product-display {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.product-display .product-display-left {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.product-display .product-display-left .box-image-left {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.product-display .product-display-left .box-image-left img {
+  max-height: 99px;
+}
+
+/* right side */
+
+.product-display .product-display-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.product-display .product-display-right h3 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.product-display .product-display-right .box-star {
+  display: flex;
+  column-gap: 0.5rem;
+  color: #ff813f !important;
+  --tw-text-opacity: 1;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.product-display .product-display-right .box-price {
+  display: flex;
+  column-gap: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-display .product-display-right .box-price .old-price {
+  text-decoration: line-through;
+}
+
+.product-display .product-display-right .box-price .new-price {
+  color: #ff813f;
+}
+
+
+/*  */
+.product-display .product-display-right .container-desc {
+  margin-bottom: 1rem;
+}
+
+.product-display .product-display-right .container-desc h4 {
+  font-size: 16PX;
+  font-weight: 700;
+}
+
+.product-display .product-display-right .container-desc .box-size {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-display .product-display-right .container-desc .box-size .size {
+  color: #0f172a;
+  
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  border: 1px solid #cacaca;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-display .product-display-right .container-desc .box-size .ring-slate-900 {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  border: 2px solid #6e6e6e;
+}
+
+
+.product-display .product-display-right .container-desc .box-btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  margin-bottom: 1rem;
+  max-width: 555px;
+}
+
+.product-display .product-display-right .container-desc .box-btn .add {
+  font-size: 14px;
+  font-weight: 400;
+  border-width: 1px;
+  border-color: #292c27 ;
+  background-color: transparent;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #292c27 ;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+}
+.product-display .product-display-right .container-desc .box-btn .add:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.product-display .product-display-right .container-desc .box-btn .buy {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px #292c27 solid;
+  background-color: #292c27;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.product-display .product-display-right .container-desc .box-btn .buy:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product-display .product-display-right .container-desc p {
+  text-transform: capitalize;
+}
+
+.product-display .product-display-right .container-desc p span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+
+
+
+
+/* responsive */
+
+@media (min-width: 1280px) {
+  .product-display{
+    flex-direction: row;
+  }
+  .product-display .product-display-left {
+    flex: 1 1 0%;
+  }
+
+  .product-display .product-display-right {
+    flex: 1.7 ;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  .product-display .product-display-right h3 {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+}

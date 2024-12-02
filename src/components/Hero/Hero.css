@@ -1,0 +1,152 @@
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #171d29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10rem;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-container .hero-img {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-container .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*  */
+
+.hero-container .hero-text {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10rem;
+  overflow: hidden;
+  gap: 2rem;
+  color: white;
+}
+
+.hero-container .hero-text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  width: 50%;
+  /* color: #377dff; */
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-container .hero-text .hero-p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-container .hero-text .hero-p p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-container .hero-text button {
+  background-color: #ff813f;
+  color: white;
+  padding: 1rem 2.8rem;
+  border: none;
+  border: 2px solid #ff813f;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.hero-container .hero-text button:hover {
+  background-color: white;
+  color: #ff813f;
+  border: 2px solid #ff813f;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+/* mobile */
+
+@media (max-width: 990px) {
+  .hero-container {
+    padding-right: 3rem;
+}
+
+.hero-container .hero-text {
+  padding-left: 3rem;
+}
+}
+
+@media (max-width: 780px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 0rem;
+}
+
+.hero-container .hero-img {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.hero-container .hero-img img {
+  object-position: top;
+}
+
+.hero-container .hero-text {
+  width: 100%;
+  height: 50vh;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+
+.hero-container .hero-text h1 {
+  width: 70%;
+}
+
+}
+
+@media (max-width: 580px) {
+  .hero-container .hero-text h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-container .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-container .hero-text .hero-p p {
+    font-size: 1rem;
+}
+
+.hero-container .hero-text {
+  padding-left: 2rem;
+}
+
+}

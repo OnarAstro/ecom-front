@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color:  #f0f2f5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+} 
+
+.f-icon {
+  font-size: 2rem;
+}
+
+li {
+  all: unset;
+  cursor: pointer !important;
+}
+
+a {
+  all: unset;
+  cursor: pointer !important;
+}
+
+.lo {
+  color: #ff813f;
+}
+
+.active_link {
+  color: #ff813f;
+  font-size: large;
+  font-weight: 600; 
+  animation: scale 0.3s ease-in-out    ;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

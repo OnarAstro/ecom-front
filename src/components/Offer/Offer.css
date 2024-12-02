@@ -1,0 +1,59 @@
+.offer {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 4rem;
+  background-image: url("./../../assets/banneroffer.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.offer h2 {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.offer h3 {
+  color: hsl(0, 0%, 0%, 0.8);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.offer button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 0%, 0.8);
+  color: white;
+  border: 2px solid hsl(0, 0%, 0%, 0.8);
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.offer button:hover {
+  background-color: white;
+  color: hsl(0, 0%, 0%, 0.8);
+  border: 2px solid hsl(0, 0%, 0%, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 550px) {
+  .offer h2 {
+    font-size: 2rem;
+}
+
+.offer h3 {
+  font-size: 1.5rem;
+}
+
+
+}
