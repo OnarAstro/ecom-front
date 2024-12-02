@@ -3,6 +3,7 @@ import { ShopContext } from "../../Context/ShopContext";
 import { TbTrash } from "react-icons/tb";
 
 import "./CartItems.css";
+import { Link } from "react-router-dom";
 
 const CartItems = () => {
   const { all_products, cartItems, removeFromCart, getTotalCartAmount } =
@@ -24,25 +25,29 @@ const CartItems = () => {
           {all_products.map((e) => {
             if (cartItems[e.id] > 0) {
               return (
-                <tr
-                  key={e.id}                >
+                <tr key={e.id}>
                   <td className="box-img ">
-                    <img
-                      src={e.image}
-                      alt="productImg"
-                      height={43}
-                      width={43}
-                    />
+                    <Link to={`/product/${e.id}`}>
+                      <img
+                        src={e.image}
+                        alt="productImg"
+                        height={43}
+                        width={43}
+                      />
+                    </Link>
                   </td>
                   <td>
-                    <div className="name">{e.name}</div>
+                    <div className="name">{e.name.slice(0, 6)}..</div>
                   </td>
                   <td>${e.new_price}</td>
                   <td className="items">{cartItems[e.id]}</td>
                   <td>${e.new_price * cartItems[e.id]}</td>
                   <td>
                     <div className="delete">
-                      <TbTrash onClick={() => removeFromCart(e.id)} />
+                      <TbTrash
+                        className="delete-icon"
+                        onClick={() => removeFromCart(e.id)}
+                      />
                     </div>
                   </td>
                 </tr>
@@ -59,9 +64,7 @@ const CartItems = () => {
           <div>
             <div className="cart-total">
               <h4 className=" total-title">Subtotal:</h4>
-              <h4 className="total-amount">
-                ${getTotalCartAmount()}
-              </h4>
+              <h4 className="total-amount">${getTotalCartAmount()}</h4>
             </div>
             <hr />
             <div className="cart-total">
@@ -74,7 +77,9 @@ const CartItems = () => {
               <h4 className="total">${getTotalCartAmount()}</h4>
             </div>
           </div>
-          <button className="btn-checkout btn_dark_rounded w-44">Checkout</button>
+          <button className="btn-checkout btn_dark_rounded w-44">
+            Checkout
+          </button>
           <div className=" container-coupon flex flex-col gap-10">
             <h4 className="bold-20 capitalize">Your coupon code enter here:</h4>
             <div className="box-coupon rounded-full ring-1 ring-slate-900/10">

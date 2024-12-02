@@ -4,6 +4,7 @@ import pro1 from "./../../assets/product_5.png";
 import pro2 from "./../../assets/product_2.png";
 import pro3 from "./../../assets/product_3.png";
 import pro4 from "./../../assets/product_4.png";
+import { Link } from "react-router-dom";
 
 const NewsLetter = () => {
   return (
@@ -14,7 +15,7 @@ const NewsLetter = () => {
         <p className="news-letter-p2">
           Follow us on social media for more discount & promotions
         </p>
-        <h4>@astro_as3nn</h4>
+        <Link target="_blank" to="https://www.instagram.com/astro_as3nn/"><h4>@astro_as3nn</h4></Link>
       </div>
       <div className="news-letter-img">
         <img src={pro1} alt="" />

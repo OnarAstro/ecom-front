@@ -1,7 +1,7 @@
 import Navbar from "../Navbar/Navbar";
 import { BiUserCircle } from "react-icons/bi";
 import { MdClose, MdMenu, MdOutlineShoppingBag } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import { useContext, useState } from "react";
 import { CgLogOut } from "react-icons/cg";
@@ -30,7 +30,7 @@ const Header = () => {
               />
             )}
           </div>
-          <h1>Astro</h1>
+          <Link to="/"><h1>Astro</h1></Link>
         </div>
         <Navbar menuOpened={menuOpened} />
 

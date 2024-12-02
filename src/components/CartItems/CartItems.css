@@ -76,8 +76,14 @@
   font-size: 22px;
   font-weight: 700;
   padding-left: 3rem;
+  transition: all 0.1s ease-in-out;
 }
 
+.cart .cart-table tbody tr td div.delete .delete-icon:hover {
+  color: crimson;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
 
 
 /*  */
