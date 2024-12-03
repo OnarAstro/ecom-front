@@ -62,7 +62,7 @@ const Header = () => {
         <div className="icons flex items-center gap-4">
           {localStorage.getItem("auth-token") ? (
             <div className="users">
-              {username && <span className="username">{username}</span>}
+              {username && <span className="username">{username.slice(0, 7)}</span>}
               <NavLink
                 onClick={() => {
                   localStorage.removeItem("auth-token");
@@ -72,7 +72,7 @@ const Header = () => {
                 to="/logout"
                 className="none2"
               >
-                <CgLogOut />
+                <CgLogOut className="logout-icon" />
               </NavLink>
             </div>
           ) : (
@@ -80,7 +80,7 @@ const Header = () => {
               <BiUserCircle />
             </NavLink>
           )}
-          <NavLink to="/cart-page">
+          <NavLink to="/cart-page" className="logout-icon">
             <MdOutlineShoppingBag />
             <span> {getTotalCartItems()}</span>
           </NavLink>
