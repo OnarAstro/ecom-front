@@ -72,6 +72,26 @@
   display: none;
 }
 
+
+
+.header .users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header .users span {
+  color: #ff813f;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  /* margin-bottom: 0.5rem; */
+  padding: 0;
+  text-align: start;
+  text-transform: uppercase;
+}
+
 /* mobile  */
 
 
